@@ -1,1 +1,5 @@
 language: ruby
+
+script:
+  - ruby specs/pet_shop_spec.rb
+  - ruby specs/object_pet_shop_spec.rb
