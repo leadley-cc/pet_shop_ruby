@@ -26,16 +26,14 @@ class Customer
 end
 
 class Pet
-  def initialize(name, pet_type, breed, price)
+  def initialize(name, type, breed, price)
     @name = name
-    @pet_type = pet_type
+    @type = type
     @breed = breed
     @price = price
   end
 
-  attr_reader :name
-  attr_reader :breed
-  attr_reader :price
+  attr_reader :name, :breed, :price
 
 end
 
@@ -47,9 +45,7 @@ class PetShop
     @pets = pets
   end
 
-  attr_reader :name
-  attr_reader :total_cash
-  attr_reader :pets_sold
+  attr_reader :name, :total_cash, :pets_sold
 
   def add_or_remove_cash(cash_amount)
     @total_cash += cash_amount
